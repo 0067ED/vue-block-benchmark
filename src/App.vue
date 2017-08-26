@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <block
-        rows="100px 200px 100px"
-        cols="100px 300px auto 100px"
+    <block class="main"
+        rows="100px auto 200px"
+        cols="100px 1fr 2fr 200px"
         pattern="
           b1 b1 b2 b3,
           b4 b5 b6 b3,
@@ -27,10 +27,16 @@ export default {
 </script>
 
 <style>
-#app {
+body {
+  margin: 0;
+}
+.main {
   color: #495057;
   font-size: 32px;
+  width: 100vw;
+  height: 100vh;
 }
+
 .area-1 {
     background: #ffe8cc;
 }
