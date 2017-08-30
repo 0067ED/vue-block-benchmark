@@ -30,13 +30,13 @@ function runTest() {
     render: h => h(TestApp),
     mounted() {
       createTime += performance.now() - startTime;
-      setTimeout(() => {
+    this.$nextTick(() => {
         const startDestroyTime = performance.now();
         this.$destroy();
         destroyTime += performance.now() - startDestroyTime;
         count--;
         runTest();
-      }, 200);
+      });
     }
   });
 }
