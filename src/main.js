@@ -8,7 +8,7 @@ Vue.config.productionTip = false;
 Vue.use(Block);
 
 /* eslint-disable no-new */
-const MAX_COUNT = 100;
+const MAX_COUNT = 1;
 let count = MAX_COUNT;
 let createTime = 0;
 let destroyTime = 0;
